@@ -56,7 +56,7 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Dependencies, JSX config, workspace backend (types, JSONL store, manager)
+- [x] 02-01-PLAN.md — Dependencies, JSX config, workspace backend (types, JSONL store, manager)
 - [ ] 02-02-PLAN.md — CLI entry point, Ink App shell, UI components
 - [ ] 02-03-PLAN.md — Anthropic streaming client (pure TS, no React)
 - [ ] 02-04-PLAN.md — React hooks, full wiring, Ctrl+C, token tracking, visual verification
@@ -175,7 +175,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Security & Foundation | 6/6 | ✓ Complete | 2026-02-06 |
-| 2. Core Interface | 0/4 | In Progress | - |
+| 2. Core Interface | 1/4 | In Progress | - |
 | 3. Memory System | 0/0 | Not started | - |
 | 4. Workspace Management | 0/0 | Not started | - |
 | 5. Vector Memory | 0/0 | Not started | - |

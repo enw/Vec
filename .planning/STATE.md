@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-02-05)
 
 **Core value:** Your personal assistant remembers context across sessions without leaking your sensitive data.
-**Current focus:** Phase 1 - Security & Foundation
+**Current focus:** Phase 2 - Core Interface
 
 ## Current Position
 
-Phase: 1 of 9 (Security & Foundation)
-Plan: 6 of 6 in current phase
-Status: Phase complete
-Last activity: 2026-02-06 — Completed 01-06-PLAN.md
+Phase: 2 of 9 (Core Interface)
+Plan: 1 of 4 in current phase
+Status: In progress
+Last activity: 2026-02-06 — Completed 02-01-PLAN.md
 
-Progress: [█░░░░░░░░░] 10.2%
+Progress: [██░░░░░░░░] 11.9%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 2.3 min
-- Total execution time: 0.23 hours
+- Total plans completed: 7
+- Average duration: 2.6 min
+- Total execution time: 0.30 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-security-and-foundation | 6 | 14.0min | 2.3min |
+| 02-core-interface | 1 | 4.0min | 4.0min |
 
 **Recent Trend:**
-- Last 5 plans: 01-02 (1.8min), 01-03 (1.3min), 01-04 (1.5min), 01-05 (1.4min), 01-06 (5.2min)
-- Trend: Integration testing plan took longer (55 tests), core plans ~1.5 min each
+- Last 5 plans: 01-03 (1.3min), 01-04 (1.5min), 01-05 (1.4min), 01-06 (5.2min), 02-01 (4.0min)
+- Trend: Setup/integration plans longer (4-5 min), core feature plans ~1.5 min
 
 *Updated after each plan completion*
 
@@ -64,6 +65,10 @@ Recent decisions affecting current work:
 - 01-06: Barrel export resolves duplicate PermissionAction export via selective re-exports
 - 01-06: vitest test framework with 55 tests covering all security requirements
 - 01-06: EgressFilter mode defaults to 'block' in SecurityManager initialization
+- 02-01: JSONL append-only format for conversation persistence (9000x faster than monolithic JSON)
+- 02-01: XDG-compliant data directory at $XDG_DATA_HOME/vec/workspaces
+- 02-01: Metadata file tracks lastActive workspace and lastNumbered counter
+- 02-01: Workspace validation restricted to alphanumeric + hyphens/underscores (1-100 chars)
 
 ### Pending Todos
 
@@ -75,6 +80,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-06T18:47:10Z
-Stopped at: Completed 01-06-PLAN.md (Phase 1 complete)
+Last session: 2026-02-06T23:29:34Z
+Stopped at: Completed 02-01-PLAN.md
 Resume file: None
