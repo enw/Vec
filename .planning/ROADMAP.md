@@ -33,10 +33,15 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. System classifies input sources as trusted (user commands) or untrusted (external content)
   3. Outbound data transfers are filtered for sensitive patterns (credentials, PII)
   4. User receives alerts when token usage exceeds 70-80% threshold
-**Plans**: TBD
+**Plans**: 6 plans
 
 Plans:
-- [ ] 01-01: TBD
+- [ ] 01-01-PLAN.md — Project scaffolding, config system, audit logger
+- [ ] 01-02-PLAN.md — Permission engine with hybrid approval flow (SEC-01)
+- [ ] 01-03-PLAN.md — Input classification and validation (SEC-02)
+- [ ] 01-04-PLAN.md — Egress filtering for sensitive data (SEC-03)
+- [ ] 01-05-PLAN.md — Token usage monitoring with alerts (SEC-04)
+- [ ] 01-06-PLAN.md — Integration wiring, facade, and test suite
 
 ### Phase 2: Core Interface
 **Goal**: Users can converse with assistant through CLI/TUI with streaming responses
@@ -137,7 +142,7 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. User assigns research task through dedicated interface
   2. Assistant asks clarifying questions until definition of done is clear
-  3. Research loop iterates (research → present findings → refine → repeat) until complete
+  3. Research loop iterates (research -> present findings -> refine -> repeat) until complete
   4. Long-running research tasks persist across sessions
   5. Research outputs save to workspace and are retrievable later
 **Plans**: TBD
@@ -162,11 +167,11 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Security & Foundation | 0/0 | Not started | - |
+| 1. Security & Foundation | 0/6 | Planned | - |
 | 2. Core Interface | 0/0 | Not started | - |
 | 3. Memory System | 0/0 | Not started | - |
 | 4. Workspace Management | 0/0 | Not started | - |
