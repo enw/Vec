@@ -12,7 +12,7 @@ Vec delivers a secure AI personal assistant with persistent memory across nine p
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Security & Foundation** - Permission system and security guardrails
+- [x] **Phase 1: Security & Foundation** - Permission system and security guardrails
 - [ ] **Phase 2: Core Interface** - CLI/TUI conversation manager
 - [ ] **Phase 3: Memory System** - Thread memory and profile system
 - [ ] **Phase 4: Workspace Management** - Isolation and git versioning
@@ -36,12 +36,12 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 6 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Project scaffolding, config system, audit logger
-- [ ] 01-02-PLAN.md — Permission engine with hybrid approval flow (SEC-01)
-- [ ] 01-03-PLAN.md — Input classification and validation (SEC-02)
-- [ ] 01-04-PLAN.md — Egress filtering for sensitive data (SEC-03)
-- [ ] 01-05-PLAN.md — Token usage monitoring with alerts (SEC-04)
-- [ ] 01-06-PLAN.md — Integration wiring, facade, and test suite
+- [x] 01-01-PLAN.md — Project scaffolding, config system, audit logger
+- [x] 01-02-PLAN.md — Permission engine with hybrid approval flow (SEC-01)
+- [x] 01-03-PLAN.md — Input classification and validation (SEC-02)
+- [x] 01-04-PLAN.md — Egress filtering for sensitive data (SEC-03)
+- [x] 01-05-PLAN.md — Token usage monitoring with alerts (SEC-04)
+- [x] 01-06-PLAN.md — Integration wiring, facade, and test suite
 
 ### Phase 2: Core Interface
 **Goal**: Users can converse with assistant through CLI/TUI with streaming responses
@@ -171,7 +171,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Security & Foundation | 0/6 | Planned | - |
+| 1. Security & Foundation | 6/6 | ✓ Complete | 2026-02-06 |
 | 2. Core Interface | 0/0 | Not started | - |
 | 3. Memory System | 0/0 | Not started | - |
 | 4. Workspace Management | 0/0 | Not started | - |
