@@ -121,18 +121,60 @@
 
 ## Traceability
 
-*Populated during roadmap creation*
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
+| SEC-01 | Phase 1 | Pending |
+| SEC-02 | Phase 1 | Pending |
+| SEC-03 | Phase 1 | Pending |
+| SEC-04 | Phase 1 | Pending |
+| CORE-01 | Phase 2 | Pending |
+| CORE-02 | Phase 2 | Pending |
+| CORE-03 | Phase 2 | Pending |
+| CORE-04 | Phase 2 | Pending |
+| CORE-05 | Phase 2 | Pending |
+| MEM-01 | Phase 3 | Pending |
+| MEM-02 | Phase 3 | Pending |
+| MEM-03 | Phase 3 | Pending |
+| MEM-04 | Phase 3 | Pending |
+| MEM-05 | Phase 3 | Pending |
+| MEM-06 | Phase 3 | Pending |
+| MEM-07 | Phase 3 | Pending |
+| MEM-08 | Phase 3 | Pending |
+| WORK-01 | Phase 4 | Pending |
+| WORK-02 | Phase 4 | Pending |
+| WORK-03 | Phase 4 | Pending |
+| WORK-04 | Phase 4 | Pending |
+| VEC-01 | Phase 5 | Pending |
+| VEC-02 | Phase 5 | Pending |
+| VEC-03 | Phase 5 | Pending |
+| VEC-04 | Phase 5 | Pending |
+| MODEL-01 | Phase 6 | Pending |
+| MODEL-02 | Phase 6 | Pending |
+| MODEL-03 | Phase 6 | Pending |
+| MODEL-04 | Phase 6 | Pending |
+| MODEL-05 | Phase 6 | Pending |
+| SKILL-01 | Phase 7 | Pending |
+| SKILL-02 | Phase 7 | Pending |
+| SKILL-03 | Phase 7 | Pending |
+| SKILL-04 | Phase 7 | Pending |
+| SKILL-05 | Phase 7 | Pending |
+| SKILL-06 | Phase 7 | Pending |
+| RES-01 | Phase 8 | Pending |
+| RES-02 | Phase 8 | Pending |
+| RES-03 | Phase 8 | Pending |
+| RES-04 | Phase 8 | Pending |
+| RES-05 | Phase 8 | Pending |
+| TRACE-01 | Phase 9 | Pending |
+| TRACE-02 | Phase 9 | Pending |
+| TRACE-03 | Phase 9 | Pending |
+| TRACE-04 | Phase 9 | Pending |
 
 **Coverage:**
-- v0 requirements: 22 total
-- v1 requirements: 21 total
-- v2 requirements: 17 total
-- Mapped to phases: (pending roadmap)
-- Unmapped: (pending roadmap)
+- v0 requirements: 22 total, 22 mapped ✓
+- v1 requirements: 21 total, 21 mapped ✓
+- v2 requirements: 17 total (deferred to future roadmap)
+- **Total mapped: 43/43 requirements (100% coverage)**
 
 ---
 *Requirements defined: 2026-02-05*
-*Last updated: 2026-02-05 after initial definition*
+*Last updated: 2026-02-06 after roadmap creation*
