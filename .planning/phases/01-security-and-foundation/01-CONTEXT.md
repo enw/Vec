@@ -20,13 +20,14 @@ Prevent autonomous data leaks through permission-based action gates. Establish s
   - Data reads from sensitive locations (~/.ssh, ~/.aws, credential files)
 - **Single mode across all workspaces** — Same permission rules everywhere
 - **Configurable verbosity** — User can set preference for minimal/detailed/custom permission prompts
+- **Rule persistence** — Store approved permission rules in config file for reuse across sessions
 
 ### Claude's Discretion
 - Input classification logic (what qualifies as trusted vs untrusted)
 - Data leak prevention patterns and detection (credentials, PII, API keys)
 - Token budget alerting thresholds and display format
 - Permission prompt UI/UX details
-- How to store and apply permission rules
+- Config file format and location for permission rules
 - Error handling when permission denied
 - Audit logging of permission requests and decisions
 
