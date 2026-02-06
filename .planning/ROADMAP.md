@@ -53,10 +53,13 @@ Plans:
   3. User can stop conversation and restart in same workspace without losing context
   4. User can create new named workspaces (e.g., "project-planning")
   5. User can create new numbered workspaces (auto-increment)
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 02-01: TBD
+- [ ] 02-01-PLAN.md — Dependencies, JSX config, workspace backend (types, JSONL store, manager)
+- [ ] 02-02-PLAN.md — CLI entry point, Ink App shell, UI components
+- [ ] 02-03-PLAN.md — Anthropic streaming client (pure TS, no React)
+- [ ] 02-04-PLAN.md — React hooks, full wiring, Ctrl+C, token tracking, visual verification
 
 ### Phase 3: Memory System
 **Goal**: Assistant remembers conversation context and user preferences across sessions
@@ -172,7 +175,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Security & Foundation | 6/6 | ✓ Complete | 2026-02-06 |
-| 2. Core Interface | 0/0 | Not started | - |
+| 2. Core Interface | 0/4 | In Progress | - |
 | 3. Memory System | 0/0 | Not started | - |
 | 4. Workspace Management | 0/0 | Not started | - |
 | 5. Vector Memory | 0/0 | Not started | - |
