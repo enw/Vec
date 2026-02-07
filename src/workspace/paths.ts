@@ -18,3 +18,15 @@ export function getWorkspacePath(name: string): string {
 export function getMetadataPath(): string {
   return join(getWorkspacesDir(), '.metadata.json');
 }
+
+export function getGlobalProfilesDir(): string {
+  return join(getDataDir(), 'profiles');
+}
+
+export function getGlobalProfilePath(filename: string): string {
+  return join(getGlobalProfilesDir(), filename);
+}
+
+export function getWorkspaceProfilePath(workspaceName: string, filename: string): string {
+  return join(getWorkspacePath(workspaceName), filename);
+}
