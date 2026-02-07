@@ -10,29 +10,29 @@ See: .planning/PROJECT.md (updated 2026-02-05)
 ## Current Position
 
 Phase: 2 of 9 (Core Interface)
-Plan: 3 of 4 in current phase
-Status: In progress
-Last activity: 2026-02-06 — Completed 02-03-PLAN.md
+Plan: 4 of 4 in current phase
+Status: Phase complete
+Last activity: 2026-02-06 — Completed 02-04-PLAN.md
 
-Progress: [██░░░░░░░░] 15.3%
+Progress: [██░░░░░░░░] 16.9%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
-- Average duration: 2.6 min
-- Total execution time: 0.39 hours
+- Total plans completed: 10
+- Average duration: 18.4 min
+- Total execution time: 3.05 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-security-and-foundation | 6 | 14.0min | 2.3min |
-| 02-core-interface | 3 | 9.5min | 3.2min |
+| 02-core-interface | 4 | 167.5min | 41.9min |
 
 **Recent Trend:**
-- Last 5 plans: 01-05 (1.4min), 01-06 (5.2min), 02-01 (4.0min), 02-02 (2.5min), 02-03 (3.0min)
-- Trend: LLM/UI plans 2.5-3 min, setup/integration plans 4-5 min
+- Last 5 plans: 01-06 (5.2min), 02-01 (4.0min), 02-02 (2.5min), 02-03 (3.0min), 02-04 (158min)
+- Trend: 02-04 included verification iterations + OpenRouter fallback implementation
 
 *Updated after each plan completion*
 
@@ -77,6 +77,12 @@ Recent decisions affecting current work:
 - 02-03: AbortSignal cancellation preserves partial content with cancelled flag
 - 02-03: StreamResult never throws, returns error field for graceful degradation
 - 02-03: Zero token usage on errors/cancellation (no partial billing)
+- 02-04: useConversation separates streaming (setState) from persistence (store.append)
+- 02-04: useStreaming wraps client with React state and AbortController ref
+- 02-04: Ctrl+C double behavior: first cancels stream, second exits app
+- 02-04: Provider fallback chain: ANTHROPIC_API_KEY → OPENROUTER_API_KEY
+- 02-04: OpenRouter requires baseURL /api, HTTP-Referer/X-Title headers, model prefix 'anthropic/'
+- 02-04: SecurityManager token tracking with graceful fallback if config unavailable
 
 ### Pending Todos
 
@@ -88,8 +94,8 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-06T23:36:37Z
-Stopped at: Completed 02-03-PLAN.md
+Last session: 2026-02-06T23:57:45Z
+Stopped at: Completed 02-04-PLAN.md (Phase 2 complete)
 Resume file: None
 
 Config (if exists):
