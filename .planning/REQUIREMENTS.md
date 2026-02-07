@@ -14,11 +14,11 @@
 
 ### Core Interface
 
-- [ ] **CORE-01**: CLI/TUI interface using Ink framework
-- [ ] **CORE-02**: Conversation manager with streaming responses
-- [ ] **CORE-03**: Single agent conversation support
-- [ ] **CORE-04**: Start/stop/restart in same workspace (state persistence)
-- [ ] **CORE-05**: Create new named or numbered workspaces
+- [x] **CORE-01**: CLI/TUI interface using Ink framework
+- [x] **CORE-02**: Conversation manager with streaming responses
+- [x] **CORE-03**: Single agent conversation support
+- [x] **CORE-04**: Start/stop/restart in same workspace (state persistence)
+- [x] **CORE-05**: Create new named or numbered workspaces
 
 ### Memory & Profiles
 

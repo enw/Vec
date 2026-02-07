@@ -13,7 +13,7 @@ Vec delivers a secure AI personal assistant with persistent memory across nine p
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Security & Foundation** - Permission system and security guardrails
-- [ ] **Phase 2: Core Interface** - CLI/TUI conversation manager
+- [x] **Phase 2: Core Interface** - CLI/TUI conversation manager
 - [ ] **Phase 3: Memory System** - Thread memory and profile system
 - [ ] **Phase 4: Workspace Management** - Isolation and git versioning
 - [ ] **Phase 5: Vector Memory** - Semantic search over conversations
@@ -57,9 +57,9 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Dependencies, JSX config, workspace backend (types, JSONL store, manager)
-- [ ] 02-02-PLAN.md — CLI entry point, Ink App shell, UI components
-- [ ] 02-03-PLAN.md — Anthropic streaming client (pure TS, no React)
-- [ ] 02-04-PLAN.md — React hooks, full wiring, Ctrl+C, token tracking, visual verification
+- [x] 02-02-PLAN.md — CLI entry point, Ink App shell, UI components
+- [x] 02-03-PLAN.md — Anthropic streaming client (pure TS, no React)
+- [x] 02-04-PLAN.md — React hooks, full wiring, Ctrl+C, token tracking, visual verification
 
 ### Phase 3: Memory System
 **Goal**: Assistant remembers conversation context and user preferences across sessions
@@ -175,7 +175,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Security & Foundation | 6/6 | ✓ Complete | 2026-02-06 |
-| 2. Core Interface | 1/4 | In Progress | - |
+| 2. Core Interface | 4/4 | ✓ Complete | 2026-02-06 |
 | 3. Memory System | 0/0 | Not started | - |
 | 4. Workspace Management | 0/0 | Not started | - |
 | 5. Vector Memory | 0/0 | Not started | - |
