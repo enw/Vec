@@ -19,17 +19,31 @@ interface AppProps {
 export const App: React.FC<AppProps> = ({ workspaceName, workspacePath }) => {
   const { exit } = useApp();
 
-  // Check for API key
+  // Check for API key and initialize client with fallback
   const [apiKeyError, setApiKeyError] = useState<string | null>(null);
+  const [providerInfo, setProviderInfo] = useState<string>('');
 
   // Initialize services on mount
   const [store] = useState(() => new ConversationStore(workspacePath));
   const [client] = useState(() => {
-    if (!process.env.ANTHROPIC_API_KEY) {
-      setApiKeyError('Set ANTHROPIC_API_KEY environment variable to start chatting.');
-      return null;
+    // Try Anthropic first
+    if (process.env.ANTHROPIC_API_KEY) {
+      setProviderInfo('anthropic');
+      return new AnthropicClient();
     }
-    return new AnthropicClient();
+
+    // Fallback to OpenRouter
+    if (process.env.OPENROUTER_API_KEY) {
+      setProviderInfo('openrouter');
+      return new AnthropicClient({
+        apiKey: process.env.OPENROUTER_API_KEY,
+        baseURL: 'https://openrouter.ai/api/v1',
+      });
+    }
+
+    // No API keys available
+    setApiKeyError('Set ANTHROPIC_API_KEY or OPENROUTER_API_KEY to start chatting.');
+    return null;
   });
   const [security] = useState<SecurityManager | null>(() => {
     const sm = new SecurityManager();

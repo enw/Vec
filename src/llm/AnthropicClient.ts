@@ -5,9 +5,10 @@ import type { TokenUsageEvent } from '../types.js';
 export class AnthropicClient {
   private client: Anthropic;
 
-  constructor(options?: { apiKey?: string }) {
+  constructor(options?: { apiKey?: string; baseURL?: string }) {
     this.client = new Anthropic({
       apiKey: options?.apiKey,
+      baseURL: options?.baseURL,
     });
   }
 
