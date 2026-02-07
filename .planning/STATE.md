@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-05)
 ## Current Position
 
 Phase: 3 of 5 (Memory System)
-Plan: 1 of 5 in current phase
+Plan: 2 of 5 in current phase
 Status: In progress
-Last activity: 2026-02-07 — Completed 03-01-PLAN.md
+Last activity: 2026-02-07 — Completed 03-02-PLAN.md
 
-Progress: [███████░░░] 73.3%
+Progress: [███████░░░] 80.0%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 11
-- Average duration: 16.8 min
-- Total execution time: 3.09 hours
+- Total plans completed: 12
+- Average duration: 15.5 min
+- Total execution time: 3.13 hours
 
 **By Phase:**
 
@@ -29,11 +29,11 @@ Progress: [███████░░░] 73.3%
 |-------|-------|-------|----------|
 | 01-security-and-foundation | 6 | 14.0min | 2.3min |
 | 02-core-interface | 4 | 167.5min | 41.9min |
-| 03-memory-system | 1 | 2.0min | 2.0min |
+| 03-memory-system | 2 | 4.5min | 2.3min |
 
 **Recent Trend:**
-- Last 5 plans: 02-01 (4.0min), 02-02 (2.5min), 02-03 (3.0min), 02-04 (158min), 03-01 (2.0min)
-- Trend: Phase 03 starting strong with efficient execution
+- Last 5 plans: 02-02 (2.5min), 02-03 (3.0min), 02-04 (158min), 03-01 (2.0min), 03-02 (2.5min)
+- Trend: Phase 03 maintaining strong velocity with focused implementation
 
 *Updated after each plan completion*
 
@@ -89,6 +89,11 @@ Recent decisions affecting current work:
 - 03-01: Global profiles ($XDG_DATA_HOME/vec/profiles/) vs workspace profiles per-workspace
 - 03-01: proper-lockfile for directory locking with stale detection (10s threshold)
 - 03-01: import.meta.url template resolution for dist compatibility
+- 03-02: 100k token limit hardcoded (not configurable) per user constraint
+- 03-02: 10k buffer tokens for system prompt and response reserve
+- 03-02: Cache tokens by message ID (not content hash) - messages immutable in JSONL
+- 03-02: 80% threshold (80k tokens) triggers summarization - research-backed
+- 03-02: Offline fallback to char/4 estimate when API unavailable
 
 ### Pending Todos
 
@@ -100,8 +105,8 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-07T17:17:39Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-02-07T17:18:43Z
+Stopped at: Completed 03-02-PLAN.md
 Resume file: None
 
 Config (if exists):
