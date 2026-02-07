@@ -38,6 +38,10 @@ export const App: React.FC<AppProps> = ({ workspaceName, workspacePath }) => {
       return new AnthropicClient({
         apiKey: process.env.OPENROUTER_API_KEY,
         baseURL: 'https://openrouter.ai/api/v1',
+        defaultHeaders: {
+          'HTTP-Referer': 'https://github.com/enw/vec',
+          'X-Title': 'Vec CLI',
+        },
       });
     }
 

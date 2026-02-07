@@ -4,16 +4,20 @@ import type { TokenUsageEvent } from '../types.js';
 
 export class AnthropicClient {
   private client: Anthropic;
+  private modelPrefix: string;
 
-  constructor(options?: { apiKey?: string; baseURL?: string }) {
+  constructor(options?: { apiKey?: string; baseURL?: string; defaultHeaders?: Record<string, string> }) {
     this.client = new Anthropic({
       apiKey: options?.apiKey,
       baseURL: options?.baseURL,
+      defaultHeaders: options?.defaultHeaders,
     });
+    // OpenRouter requires provider prefix in model name
+    this.modelPrefix = options?.baseURL?.includes('openrouter') ? 'anthropic/' : '';
   }
 
   async stream(options: StreamOptions): Promise<StreamResult> {
-    const model = options.model || 'claude-sonnet-4-20250514';
+    const model = options.model || `${this.modelPrefix}claude-sonnet-4-20250514`;
     const maxTokens = options.maxTokens || 4096;
 
     let fullContent = '';
