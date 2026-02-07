@@ -74,10 +74,14 @@ Plans:
   6. HEARTBEAT.md profile tracks daily check-ins and status
   7. All memory and state changes are explicitly written to disk
   8. Assistant recovers gracefully from crashes by loading persisted state
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] 03-01: TBD
+- [ ] 03-01-PLAN.md — Profile schemas, templates, ProfileManager with atomic writes and locking
+- [ ] 03-02-PLAN.md — Token counting with caching and token-aware message loading
+- [ ] 03-03-PLAN.md — Profile integration into app lifecycle, SOUL.md as system prompt, recovery
+- [ ] 03-04-PLAN.md — Background summarization (Worker Threads) and HEARTBEAT.md lifecycle
+- [ ] 03-05-PLAN.md — Full integration wiring and end-to-end verification
 
 ### Phase 4: Workspace Management
 **Goal**: Users can organize conversations in isolated workspaces with version control
@@ -176,7 +180,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 |-------|----------------|--------|-----------|
 | 1. Security & Foundation | 6/6 | ✓ Complete | 2026-02-06 |
 | 2. Core Interface | 4/4 | ✓ Complete | 2026-02-06 |
-| 3. Memory System | 0/0 | Not started | - |
+| 3. Memory System | 0/5 | In Progress | - |
 | 4. Workspace Management | 0/0 | Not started | - |
 | 5. Vector Memory | 0/0 | Not started | - |
 | 6. Model Switching | 0/0 | Not started | - |
